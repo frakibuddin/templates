@@ -1,0 +1,205 @@
+/*
+tamplates 11 css 
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif, Arial, Helvetica;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #e6e6e6;
+}
+header {
+  text-align: center;
+  padding-bottom: 50px;
+  background: #0caf7a;
+  border-radius: 0 0 50% 50%;
+  margin-bottom: 30px;
+}
+header .logo {
+  width: 250px;
+  max-height: 120px;
+}
+.logo-icon {
+  text-align: center;
+  margin-top: 20px;
+}
+.logo-icon img {
+  max-height: 100px;
+}
+.heading {
+  margin: 10px 0;
+}
+header .header-title {
+  font-size: 50px;
+  color: #ffffff;
+  line-height: 130%;
+  font-weight: bold;
+}
+
+/* inforgraphic */
+main {
+  margin: 70px 0;
+}
+
+.inforgraphic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.inforgraphic:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.inforgraphic-texts {
+  -ms-flex-preferred-size: 85%;
+  flex-basis: 85%;
+  background: var(--inforgraphic-bg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 20px 30px 30px;
+  color: #00434d;
+  border-radius: 0 150px 150px 0;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.inforgraphic:nth-child(even) .inforgraphic-texts {
+  border-radius: 150px 0 0 150px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.inforgraphic-desc h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000800;
+  margin-bottom: 10px;
+}
+.desc {
+  font-size: 20px;
+  line-height: 150%;
+  color: #00434d;
+}
+.inforgraphic-texts .serial-no {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  font-size: 60px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: #000800;
+  font-weight: bold;
+}
+.inforgraphic-texts .serial-no img {
+  width: 70%;
+}
+
+/* footer */
+footer {
+  background: #0caf7a;
+  border-radius: 50% 50% 0 0;
+}
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2%;
+  padding: 30px 25px;
+  border-bottom: 2px solid #b8b7b7;
+  padding-top: 120px;
+}
+.footer-top img {
+  width: 70px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.footer-bottom {
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-bottom .footer-logo {
+  width: 200px;
+  max-height: 100px;
+}
+.copywrite-txt {
+  color: #fff;
+}
+
+@media (max-width: 550px) {
+  .inforgraphic-texts {
+    padding: 20px 10px 20px 10px;
+  }
+  .desc {
+    font-size: 18px;
+  }
+  .inforgraphic-texts {
+    -ms-flex-preferred-size: 97%;
+    flex-basis: 97%;
+  }
+  .inforgraphic-texts .serial-no {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .footer-bottom,
+  .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+  header .header-title {
+    font-size: 38px;
+  }
+}

@@ -1,0 +1,311 @@
+/*
+tamplates 14 css 
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif, Arial, Helvetica;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffd86b;
+}
+
+/* header */
+header {
+  text-align: center;
+  color: #1a0d52;
+  padding: 50px 0;
+  position: relative;
+  border-bottom: 1px solid #422817;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 140px;
+  background: #ff3867;
+  border-radius: 0 0 200px 0;
+}
+header .icon-1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: #7ebab3;
+  border-radius: 200px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+header .icon-1 img {
+  width: 60%;
+  margin-bottom: -30px;
+  margin-right: -30px;
+}
+header .logo {
+  width: 250px;
+  max-height: 120px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 9;
+}
+.header-heading {
+  position: relative;
+  z-index: 9;
+}
+header .header-title {
+  font-size: 40px;
+  font-weight: 800;
+}
+.text-blue {
+  color: #1a0d52 !important;
+}
+
+.blur-shadow2 {
+  width: 250px;
+  height: 450px;
+  background: -o-linear-gradient(#ff3867, #37ffdb);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#37ffdb),
+    to(#ff3867)
+  );
+  background: -o-linear-gradient(#37ffdb, #ff3867);
+  background: linear-gradient(#37ffdb, #ff3867);
+  -webkit-filter: blur(10rem);
+  filter: blur(40px);
+  position: absolute;
+  top: 0;
+  left: 10%;
+  z-index: 1;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.blur-shadow1 {
+  width: 250px;
+  height: 450px;
+  background: -o-linear-gradient(#ff3867, #37ffdb);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#37ffdb),
+    to(#ff3867)
+  );
+  background: -o-linear-gradient(#37ffdb, #ff3867);
+  background: linear-gradient(#37ffdb, #ff3867);
+  -webkit-filter: blur(10rem);
+  filter: blur(40px);
+  position: absolute;
+  bottom: 0;
+  right: inherit;
+  right: 10%;
+  z-index: 1;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+main {
+  background-color: #fff4d5;
+  padding: 50px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.infographic {
+  width: 80%;
+  margin: auto;
+  padding: 15px 20px 15px 0px;
+  position: relative;
+  z-index: 2;
+}
+.infographic-texts {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.infographic-texts .number {
+  font-size: 35px;
+  color: #422817;
+  font-weight: 700;
+  position: relative;
+  margin-top: -7px;
+  background: #f1cc88;
+  width: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  z-index: 999;
+  border-radius: 15px;
+  border: 1px solid #422817;
+}
+.infographic-texts .number img {
+  width: 70%;
+}
+.infographic-texts .content {
+  background: #f2cb8a;
+  padding: 35px 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px #422817;
+  box-shadow: 5px 5px #422817;
+  border: 1px solid #422817;
+}
+.infographic:nth-child(even) .number,
+.infographic:nth-child(even) .content {
+  background: #ffd1ba;
+}
+.infographic-texts .number::after {
+  content: "";
+  position: absolute;
+  top: 69px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: calc(100% + 400px);
+  width: 4px;
+  background: #29271b;
+}
+.infographic-texts .content h3 {
+  color: #1c110a;
+  /* color: #7ebab3; */
+  border-radius: 43px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+.infographic-texts .content p {
+  color: #422817;
+  font-size: 23px;
+  line-height: 130%;
+}
+
+.desc {
+  color: #1c110a;
+  line-height: 150%;
+  font-size: 18px;
+}
+/* footer */
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2%;
+  padding: 30px 25px;
+  border-top: 1px solid #422817;
+  border-bottom: 1px solid #422817;
+  background: #ffbece;
+  color: #422817;
+}
+.footer-top img {
+  width: 70px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.footer-bottom {
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-bottom .footer-logo {
+  width: 150px;
+}
+
+@media (max-width: 550px) {
+  .infographic-texts {
+    -ms-flex-preferred-size: 97%;
+    flex-basis: 97%;
+  }
+  .infographic {
+    padding: 30px 20px;
+  }
+  .infographic-texts {
+    gap: 15px;
+  }
+  header::after,
+  header .icon-1 {
+    width: 100px;
+    height: 100px;
+  }
+  header .header-title {
+    font-size: 30px;
+  }
+  .infographic {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-bottom,
+  .footer-top {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .infographic-texts .number {
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+  }
+  .infographic-texts .number::after {
+    top: 48px;
+  }
+  .infographic-texts .content p {
+    font-size: 17px;
+  }
+  .infographic-texts .content {
+    padding: 25px 20px;
+  }
+  .infographic {
+    padding: 14px 12px;
+  }
+}

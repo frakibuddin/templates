@@ -1,0 +1,243 @@
+/*
+tamplates 13 css 
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif, Arial, Helvetica;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #cddc39;
+}
+
+/* header */
+header {
+  text-align: center;
+  color: #1a0d52;
+  padding: 40px 0;
+  position: relative;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: #ff3867;
+  border-radius: 0 0 200px 0;
+}
+header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: #37ffdb;
+  border-radius: 200px 0 0 0;
+}
+header .logo {
+  width: 250px;
+  max-height: 120px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 9;
+}
+.header-heading {
+  position: relative;
+  z-index: 9;
+}
+header .header-title {
+  font-size: 45px;
+  font-weight: 800;
+}
+.text-blue {
+  color: #1a0d52 !important;
+}
+main {
+  background-color: #1a0d52;
+  padding: 40px 0;
+}
+
+.icon-1 img {
+  width: 100px;
+  margin-left: 10px;
+}
+.infographic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 35px 40px;
+}
+.infographic-texts {
+  -ms-flex-preferred-size: 55%;
+  flex-basis: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.infographic-icon {
+  -ms-flex-preferred-size: 45%;
+  flex-basis: 45%;
+  position: relative;
+}
+
+.infographic-texts .number {
+  font-size: 50px;
+  color: var(--color);
+  font-weight: 700;
+  position: relative;
+  margin-top: -7px;
+}
+.infographic-texts .number::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 100%;
+  width: 5px;
+  background: #fff;
+  border-radius: 10px;
+}
+.infographic-texts .content h3 {
+  background: var(--h-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.infographic-texts .content p {
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 130%;
+  padding-left: 6%;
+  font-weight: normal;
+}
+
+.infographic-icon .circle {
+  width: 265px;
+  height: 265px;
+  border: 5px solid var(--b-color);
+  margin: auto;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.infographic-icon .circle img {
+  width: 35%;
+}
+.desc {
+  color: #fff;
+  line-height: 150%;
+  font-size: 18px;
+}
+/* footer */
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2%;
+  padding: 30px 25px;
+  border-top: 2px solid #16056c;
+  border-bottom: 2px solid #16056c;
+  background: #292054;
+}
+.footer-top img {
+  width: 70px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.footer-bottom {
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+  background: #cddc39;
+}
+.footer-bottom .footer-logo {
+  width: 150px;
+}
+
+@media (max-width: 650px) {
+  .infographic-icon .circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 550px) {
+  .infographic-icon .circle {
+    width: 200px;
+    height: 200px;
+  }
+  .infographic-icon {
+    display: none;
+  }
+  .infographic-texts .number::after {
+    top: 55px;
+  }
+  .infographic-texts {
+    -ms-flex-preferred-size: 97%;
+    flex-basis: 97%;
+  }
+  .infographic {
+    padding: 30px 20px;
+  }
+  header::after,
+  header::before {
+    width: 100px;
+    height: 100px;
+  }
+  header .header-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-bottom,
+  .footer-top {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

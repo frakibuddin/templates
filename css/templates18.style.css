@@ -1,0 +1,325 @@
+/*
+tamplates 18 css 
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif, Arial, Helvetica;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #4f1139;
+}
+header {
+  text-align: center;
+  background: #4f1139;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 25px 20px;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+header .icon-1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: #f26f75;
+  border-radius: 200px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+header .icon-1 img {
+  width: 60%;
+  margin-bottom: -30px;
+  margin-right: -30px;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: #f4a348;
+  border-radius: 0 0 200px 0;
+}
+header .logo {
+  width: 250px;
+  max-height: 120px;
+  position: relative;
+  z-index: 99;
+}
+header .header-title {
+  font-size: 40px;
+  color: #fff;
+  line-height: 130%;
+  font-weight: 800;
+  position: relative;
+  z-index: 99;
+}
+header .logo {
+  width: 250px;
+  max-height: 120px;
+  position: relative;
+  z-index: 99;
+}
+/* infographic */
+main {
+  background: #fae9db;
+  padding: 50px 70px;
+}
+.infographic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.infographic-text {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  padding: 40px 50px;
+}
+.infographic-icon {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+.infographic-text h3 {
+  font-size: 29px;
+  color: var(--h-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+.infographic-text p {
+  text-align: justify;
+}
+.desc {
+  font-size: 22px;
+  color: gray;
+  line-height: 125%;
+}
+.icon-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 85px;
+  margin: 0 10px;
+  height: 100%;
+  background: transparent;
+  border-radius: 0 10px 10px 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon-inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  background: var(--i-color);
+  width: 20px;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+
+.line-inner {
+  width: 65px;
+  height: 3px;
+  background: var(--l-color);
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.line-inner::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--l-color);
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.infographic-icon .icon {
+  width: 140px;
+  height: 140px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 15px solid var(--ic-color);
+}
+.infographic-icon .icon img {
+  width: 70%;
+  height: 70%;
+}
+.infographic:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.infographic:nth-child(even) .icon-inner {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.infographic:nth-child(even) .line {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.infographic:nth-child(even) .icon-inner::after {
+  left: inherit;
+  right: -10px;
+  border-radius: 10px 0 0 10px !important;
+}
+
+/* footer */
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2%;
+  padding: 30px 25px;
+  border-top: 2px solid #ee88e0;
+  background: #8f3d72;
+}
+.footer-top img {
+  width: 70px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.footer-bottom {
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+  color: #fff;
+}
+.text-white {
+  color: #fff !important;
+}
+.footer-bottom .footer-logo {
+  width: 150px;
+}
+
+@media (max-width: 750px) {
+  main {
+    padding: 50px 0px;
+  }
+  .infographic-text {
+    padding: 30px 10px 50px 25px;
+  }
+}
+@media (max-width: 500px) {
+  .infographic-text,
+  .infographic-icon {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .infographic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .infographic:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .icon-inner {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+    width: 250px;
+    margin: auto;
+    padding: 45px 0;
+  }
+  .infographic:nth-child(odd) .icon-inner {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  .infographic-text {
+    padding: 30px 10px 50px 10px;
+  }
+  .footer-top,
+  .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  header .header-title {
+    font-size: 30px;
+  }
+  header .logo {
+    width: 180px;
+  }
+  header .icon-1 {
+    width: 120px;
+    height: 120px;
+  }
+}
