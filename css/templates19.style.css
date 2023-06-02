@@ -13,6 +13,7 @@ tamplates 19 css
   max-width: 1000px;
   margin: 0 auto;
   background: #212a3e;
+  overflow: hidden;
 }
 header {
   text-align: center;
@@ -56,8 +57,8 @@ main {
 }
 .infographics {
   position: relative;
-  padding: 50px 0;
-  width: 80%;
+  padding: 90px 0;
+  width: 90%;
   margin: auto;
 }
 
@@ -69,7 +70,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 178px 17% 2px;
+  padding: 0px 160px 18% 2px;
   position: relative;
   grid-gap: 5px;
 }
@@ -102,7 +103,7 @@ main {
 }
 .infographic .texts .box1 {
   position: relative;
-  max-height: 350px;
+  max-height: 700px;
   overflow-y: scroll;
 }
 .infographic .texts .box1::-webkit-scrollbar {
@@ -110,12 +111,12 @@ main {
   width: 5px;
 }
 .infographic .texts .box1::-webkit-scrollbar-thumb {
-  background: rgb(221, 212, 212);
+  background: rgba(241, 236, 236, 0.575);
 }
 
 .box1 {
   background: var(--i-color);
-  padding: 20px 20px 20px 60px;
+  padding: 20px 10px 20px 65px;
   text-align: justify;
   position: relative;
   z-index: 999;
@@ -125,10 +126,10 @@ main {
 }
 .box2 {
   position: absolute;
-  top: 45%;
+  top: 41%;
   right: -75px;
   width: 120px;
-  height: 85%;
+  height: 77%;
   background: var(--b2-color);
   z-index: 99;
 }
@@ -138,17 +139,17 @@ main {
   bottom: 0;
   left: 0;
   width: 39%;
-  height: 37%;
+  height: 24%;
   background: var(--sh-coolor);
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
   clip-path: polygon(0 0, 0 100%, 100% 0);
 }
 .box3 {
   position: absolute;
-  top: 80%;
+  top: 70%;
   right: -182px;
   width: 145px;
-  height: 70%;
+  height: 68%;
   background: var(--i-color);
   z-index: 9;
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
@@ -174,10 +175,11 @@ main {
 }
 
 .desc {
-  font-size: 22px;
+  font-size: 19px;
   color: black;
-  line-height: 125%;
+  line-height: 120%;
 }
+
 /* footer */
 footer {
   background: #9c27b0;
@@ -262,6 +264,10 @@ footer .desc {
   }
   .infographic-icon {
     height: 100%;
+  }
+  .infographic .texts .box1 {
+    max-height: auto;
+    overflow-y: auto;
   }
 
   .box1 {
